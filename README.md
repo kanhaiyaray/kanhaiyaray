@@ -1,4 +1,4 @@
-  # 💫 Hi 👋 I'm Kanhaiya 
+ # 💫 Hi 👋 I'm Kanhaiya 
 
   **A passionate Full Stack Developer**
 
@@ -30,7 +30,9 @@
 ![](https://nirzak-streak-stats.vercel.app/?user=kanhaiyaray&theme=dark&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=kanhaiyaray&theme=dark&hide_border=false&include_all_commits=true&count_private=false&layout=compact)
 
-
+## 🌐 Socials:
+ [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/raykanhaiya/)
+ 
 ### ✍️ Random Dev Quote
 ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
