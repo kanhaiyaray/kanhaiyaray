@@ -162,7 +162,7 @@
 
 ---
 
-## 🚀 Let’s Build Something Impactful
+## 🚀 Let’s Connect & Build Something Impactful
 
 I’m passionate about crafting scalable products, solving real-world problems, and collaborating with people who think big.
 
@@ -185,14 +185,16 @@ Whether you're building a startup, scaling a product, or just want to exchange i
 
 ✨ Let's Connect
 
-🐙 GitHub → https://github.com/kanhaiyaray
-💼 LinkedIn → https://linkedin.com/in/raykanhaiya
-🐦 X / Twitter → https://x.com/kanhaiyaraymps
-🌳 Linktree → https://linktr.ee/Kanhaiyarai
-✉️ Email → mailto:samkanhaiya@gmail.com
+- 🐙 **GitHub** → [github.com/kanhaiyaray](https://github.com/kanhaiyaray)
+- 💼 **LinkedIn** → [linkedin.com/in/raykanhaiya](https://linkedin.com/in/raykanhaiya)
+- 🐦 **X / Twitter** → [x.com/kanhaiyaraymps](https://x.com/kanhaiyaraymps)
+- 🌳 **Linktree** → [linktr.ee/Kanhaiyarai](https://linktr.ee/Kanhaiyarai)
+- ✉️ **Email** → [samkanhaiya@gmail.com](mailto:samkanhaiya@gmail.com)
 
 ---
 
 <div align="center">
 
-  ### ⚡ "Building products, not just projects"
+### ⚡ "Building products, not just projects"
+
+</div>
