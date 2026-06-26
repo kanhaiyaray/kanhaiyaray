@@ -16,10 +16,10 @@
 
 Full-stack developer who builds, deploys, and maintains complete products — frontend, backend, and infrastructure. I care about security, real-world constraints, and shipping things that actually work.
 
-- 🔐 Auth, 2FA, and RBAC baked in from day one — not bolted on after
-- ⚡ End-to-end ownership: from UI to Railway/Vercel/Render deployment
-- 🤖 AI integrations, real-time systems (Socket.IO + WebRTC), and analytics — shipped solo
-- 🐛 Every hard bug gets documented — production failures are the best teachers
+- 🔐 Auth, 2FA, and RBAC built in from the start — JWT + OAuth 2.0 + TOTP 2FA across production apps
+- ⚡ End-to-end ownership: from UI to Railway/Vercel/Render deployment, with GitHub Actions CI/CD
+- 🤖 AI integrations, real-time systems (Socket.IO + WebRTC), and silent analytics — shipped solo
+- 🐛 Every hard bug gets documented — caught and fixed XSS vectors, ICE candidate race conditions, and SHA-256 dedup edge cases in production
 - 🌱 Currently deepening: **Docker · Kubernetes · System Design** (hands-on, not just courses)
 
 ---
@@ -61,17 +61,29 @@ Full-stack developer who builds, deploys, and maintains complete products — fr
   <td align="center" width="96"><img src="https://skillicons.dev/icons?i=fastapi" width="48"/><br>FastAPI</td>
   <td align="center" width="96"><img src="https://skillicons.dev/icons?i=npm" width="48"/><br>NPM</td>
   <td align="center" width="96"><img src="https://cdn.simpleicons.org/socketdotio/white" width="48"/><br>Socket.io</td>
-  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=react" width="48"/><br>Context API</td>
+  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=passport" width="48"/><br>Passport.js</td>
 </tr>
 
 <tr>
-  <th align="center" colspan="6">Database & DevOps</th>
+  <th align="center" colspan="6">Auth & Security</th>
+</tr>
+<tr>
+  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=jwt" width="48"/><br>JWT</td>
+  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=github" width="48"/><br>OAuth 2.0</td>
+  <td align="center" width="96"><img src="https://cdn.simpleicons.org/letsencrypt/white" width="48"/><br>TOTP 2FA</td>
+  <td align="center" width="96"><img src="https://cdn.simpleicons.org/webrtc/white" width="48"/><br>WebRTC</td>
+  <td align="center" width="96"><img src="https://cdn.simpleicons.org/helmet/white" width="48"/><br>Helmet.js</td>
+  <td align="center" width="96"><img src="https://cdn.simpleicons.org/jsonwebtokens/white" width="48"/><br>RBAC</td>
+</tr>
+
+<tr>
+  <th align="center" colspan="6">Database, Cloud & DevOps</th>
 </tr>
 <tr>
   <td align="center" width="96"><img src="https://skillicons.dev/icons?i=mongodb" width="48"/><br>MongoDB</td>
+  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=mysql" width="48"/><br>MySQL</td>
   <td align="center" width="96"><img src="https://skillicons.dev/icons?i=git" width="48"/><br>Git</td>
-  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=github" width="48"/><br>GitHub</td>
-  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=postman" width="48"/><br>Postman</td>
+  <td align="center" width="96"><img src="https://skillicons.dev/icons?i=githubactions" width="48"/><br>CI/CD</td>
   <td align="center" width="96"><img src="https://skillicons.dev/icons?i=vercel" width="48"/><br>Vercel</td>
   <td align="center" width="96"><img src="https://cdn.simpleicons.org/railway" width="65"/><br>Railway</td>
 </tr>
@@ -82,61 +94,59 @@ Full-stack developer who builds, deploys, and maintains complete products — fr
 
 ## 🏆 Featured Projects
 
-### 🧠 Developer Portfolio CMS — Headless CMS + AI Chatbot + Real-Time Chat &nbsp;·&nbsp; [🔗 Live](https://kanhaiya-kumar-developer-portfolio.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/Kanhaiya-Kumar-Developer-Portfolio-CMS)
+### 🧠 Developer Portfolio CMS — Headless CMS + AI Chatbot + Real-Time Chat &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://kanhaiya-kumar-developer-portfolio.vercel.app/) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/Kanhaiya-Kumar-Developer-Portfolio-CMS)
 
 > *A portfolio that talks back, streams video, and tracks recruiter behaviour — all built and shipped solo.*
 
 The most architecturally complex project in the stack: a full-stack headless CMS with AI, real-time communication, and silent analytics — zero redeployment needed to update content.
 
-- **Auth & Access:** JWT + bcrypt, 3-tier RBAC, 50 REST API endpoints across 4 modules
-- **AI & Real-Time:** Groq (LLaMA 3.3-70B) chatbot with keyword fallback · Socket.IO recruiter chat with session replay · WebRTC P2P video with STUN/TURN, ICE queuing, and DTLS-SRTP encryption
-- **Analytics & UX:** Silent visitor analytics (section heatmaps, conversion funnel, resume click tracking) · 9-achievement gamification system · real-time feature flags — zero redeployment to toggle features
-- **Security:** Full XSS sanitisation on all contact/email flows · admin audit log · rate limiting
+- **Auth & Access:** JWT + bcrypt, 3-tier RBAC, 50 REST API endpoints across 4 modules (admin, features, public, GitHub proxy); complete admin dashboard with full CRUD, filterable activity audit log, and real-time feature flags
+- **AI & Real-Time:** Groq (LLaMA 3.3-70B) chatbot with keyword fallback · Socket.IO recruiter chat with session replay on reconnect · WebRTC P2P video with multi-STUN, TURN fallback, ICE candidate queuing, and DTLS-SRTP encryption
+- **Analytics & UX:** Silent visitor analytics (section heatmaps, conversion funnel, resume click tracking) · 9-achievement gamification system · zero UI performance impact · full XSS sanitisation on all contact/email flows
 
 `React 18` `Node.js` `Express` `MongoDB` `Socket.IO` `WebRTC` `Groq AI` `JWT` `Multer` `Vite`
 
 ---
 
-### 🗄️ VaultFS — Enterprise File Management &nbsp;·&nbsp; [🔗 Live](https://vaultfs.in) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/VaultFS-Enterprise-File-Management-System)
+### 🗄️ VaultFS — Enterprise File Management &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://vaultfs.in) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/VaultFS-Enterprise-File-Management-System)
 
 > *Self-hosting file storage is either expensive (S3) or insecure (shared drives). VaultFS solves both.*
 
-Built a production-grade, self-hosted file platform with enterprise-level security and role management.
+Production-grade, self-hosted file platform with enterprise-level security and role management — compliance features rarely built at fresher level.
 
-- **Auth:** JWT + OAuth 2.0 (Google & GitHub) + TOTP 2FA + 4-tier RBAC
-- **Storage:** SHA-256 deduplication · file versioning with one-click restore · password-protected share links (expiry, download limits, view-only) · 8+ file type previews
-- **Compliance:** HMAC-SHA256 signed webhooks · filterable audit log · GDPR data export · rate limiting
-- **Live:** 5 active users · 50+ files · 200MB+ storage managed on Railway
+- **Auth:** JWT + OAuth 2.0 (Google & GitHub) + TOTP 2FA (speakeasy) + 4-tier RBAC for team workspaces
+- **Storage:** SHA-256 deduplication to eliminate redundant storage · file versioning with one-click restore · password-protected share links (expiry, download limits, view-only) · multi-format preview for 8+ file types (Sharp, Mammoth.js, SheetJS, Prism.js)
+- **Compliance:** Admin dashboard with user management, storage analytics, filterable audit log · HMAC-SHA256 signed webhooks · GDPR data export · rate limiting — all shipped solo
 
-`React 18` `Node.js` `Express` `MongoDB` `Socket.IO` `JWT` `Passport.js` `Sharp` `Railway`
+`React 18` `Node.js` `Express` `MongoDB` `Socket.IO` `JWT` `Passport.js` `Sharp` `Tailwind CSS` `Railway`
 
 ---
 
-### 💬 NexChat — Invite-Only Real-Time Chat &nbsp;·&nbsp; [🔗 Live](https://nexchat-red.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/NexChat)
+### 💬 NexChat — Invite-Only Real-Time Chat &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://nexchat-red.vercel.app/) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/NexChat)
 
 > *Most chat apps are open by default. NexChat is zero-trust — you need a token to enter a room.*
 
-Built a privacy-first chat platform with UUID token-based room access and rich multimedia support.
+Privacy-first chat platform with UUID token-based room access and rich multimedia support. 1000+ messages handled in production.
 
-- **Security:** Zero-trust room model — no invite token, no entry; no public directories, no discovery
-- **Features:** Voice notes, images, emoji reactions, edit/delete, typing indicators · Intersection Observer read receipts (zero scroll listeners, zero layout thrash) · MongoDB full-text search with ±15-message context jump
-- **Live:** 5 active rooms · 5 concurrent users · 1000+ messages in production
+- **Security:** Zero-trust room model — no invite token, no entry; no public directories, no discovery; a signed UUID token is the sole entry point
+- **Features:** Voice notes, images, emoji reactions, edit/delete, typing indicators · read receipts via Intersection Observer (zero scroll listeners, zero layout thrash — deliberate performance choice over the naive implementation) · MongoDB full-text search with ±15-message context jump
+- **Live:** Cloudinary face-cropped avatars, bio, and real-time online status via Clerk; 1000+ messages in production
 
-`React 19` `Vite` `Socket.IO 4.8` `Express` `MongoDB Atlas` `Cloudinary` `Clerk` `Vercel`
+`React 19` `Vite` `Socket.IO 4.8` `Express` `Mongoose 8` `MongoDB Atlas` `Cloudinary` `Clerk` `Vercel`
 
 ---
 
-### 📹 P2P Video Conferencing &nbsp;·&nbsp; [🔗 Live](https://react-js-video-call-app.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/video-conference-app)
+### 📹 P2P Video Conferencing &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://react-js-video-call-app.vercel.app/) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/video-conference-app)
 
 > *Most video call tutorials skip the hard parts — device switching, reconnection, and cross-browser quirks. This one doesn't.*
 
-Production-ready video conferencing with sub-200ms connection setup — no plugins required.
+Production-ready video conferencing with average call connection under 2 seconds — no plugins, no backend server required.
 
-- **Performance:** Sub-200ms P2P connection · DTLS-SRTP encryption · serverless signalling via ZEGOCLOUD
-- **Features:** Screen sharing · dynamic device switching (camera & mic) · reconnect after network interruption · unlimited call duration
-- **Compatibility:** Chrome, Edge, and Firefox · fully responsive Tailwind UI
+- **Performance:** Average connection time under 2 seconds · DTLS-SRTP end-to-end encryption · serverless signalling via ZEGOCLOUD — no backend required
+- **Features:** Real-time audio/video toggle · screen sharing · dynamic device switching (camera & mic) · reconnect after network interruption — all via React 18 hooks and the MediaDevices API
+- **Compatibility:** Chrome, Edge, and Firefox · unlimited call duration · fully responsive Tailwind CSS UI
 
-`React 18` `ZEGOCLOUD SDK` `Tailwind CSS` `MediaDevices API` `Vercel`
+`React 18` `ZEGOCLOUD SDK` `Tailwind CSS` `MediaDevices API` `JavaScript` `Vercel`
 
 ---
 
@@ -155,7 +165,7 @@ Production-ready video conferencing with sub-200ms connection setup — no plugi
 
 ## 🤝 Let's Connect
 
-B.Tech IT graduate (June 2026) — available for immediate joining. Open to full-time, freelance, and startup collaborations. If you're building something real — reach out.
+B.Tech IT graduate — available for immediate joining. Open to full-time, freelance, and startup collaborations. If you're building something real — reach out.
 
 - 🌐 **Portfolio** → [kanhaiya-kumar-developer-portfolio.vercel.app](https://kanhaiya-kumar-developer-portfolio.vercel.app/)
 - 🐙 **GitHub** → [github.com/kanhaiyaray](https://github.com/kanhaiyaray)
