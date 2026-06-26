@@ -1,12 +1,13 @@
 <h1 align="center">Hey, I'm Kanhaiya 👋</h1>
 
 <div align="center">
-  <p><strong>I ship full-stack apps to production — not just tutorials.</strong><br/>
-  React · Node.js · MongoDB · TypeScript &nbsp;|&nbsp; 3 live apps · real users · real traffic</p>
- 
+  <p><strong>Full-Stack Engineer · 4 production apps · MERN · WebRTC · AI integrations · available for immediate joining</strong><br/>
+  React · Node.js · MongoDB · TypeScript &nbsp;|&nbsp; 4 live apps · real users · real traffic</p>
+
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-raykanhaiya-blue?style=flat&logo=linkedin)](https://linkedin.com/in/raykanhaiya)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat&logo=vercel)](https://kanhaiya-kumar-developer-portfolio.vercel.app/)
 [![Email](https://img.shields.io/badge/Email-samkanhaiya@gmail.com-red?style=flat&logo=gmail)](mailto:samkanhaiya@gmail.com)
- 
+
 </div>
 
 ---
@@ -16,7 +17,8 @@
 Full-stack developer who builds, deploys, and maintains complete products — frontend, backend, and infrastructure. I care about security, real-world constraints, and shipping things that actually work.
 
 - 🔐 Auth, 2FA, and RBAC baked in from day one — not bolted on after
-- ⚡ End-to-end ownership: from UI to Railway/Vercel deployment
+- ⚡ End-to-end ownership: from UI to Railway/Vercel/Render deployment
+- 🤖 AI integrations, real-time systems (Socket.IO + WebRTC), and analytics — shipped solo
 - 🐛 Every hard bug gets documented — production failures are the best teachers
 - 🌱 Currently deepening: **Docker · Kubernetes · System Design** (hands-on, not just courses)
 
@@ -76,53 +78,65 @@ Full-stack developer who builds, deploys, and maintains complete products — fr
 
 </table>
 
-
 ---
 
 ## 🏆 Featured Projects
 
-### 🗄️ [VaultFS — Enterprise File Management](https://vaultfs-enterprise-file-management-system-production.up.railway.app)
+### 🧠 Developer Portfolio CMS — Headless CMS + AI Chatbot + Real-Time Chat &nbsp;·&nbsp; [🔗 Live](https://kanhaiya-kumar-developer-portfolio.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/Kanhaiya-Kumar-Developer-Portfolio-CMS)
+
+> *A portfolio that talks back, streams video, and tracks recruiter behaviour — all built and shipped solo.*
+
+The most architecturally complex project in the stack: a full-stack headless CMS with AI, real-time communication, and silent analytics — zero redeployment needed to update content.
+
+- **Auth & Access:** JWT + bcrypt, 3-tier RBAC, 50 REST API endpoints across 4 modules
+- **AI & Real-Time:** Groq (LLaMA 3.3-70B) chatbot with keyword fallback · Socket.IO recruiter chat with session replay · WebRTC P2P video with STUN/TURN, ICE queuing, and DTLS-SRTP encryption
+- **Analytics & UX:** Silent visitor analytics (section heatmaps, conversion funnel, resume click tracking) · 9-achievement gamification system · real-time feature flags — zero redeployment to toggle features
+- **Security:** Full XSS sanitisation on all contact/email flows · admin audit log · rate limiting
+
+`React 18` `Node.js` `Express` `MongoDB` `Socket.IO` `WebRTC` `Groq AI` `JWT` `Multer` `Vite`
+
+---
+
+### 🗄️ VaultFS — Enterprise File Management &nbsp;·&nbsp; [🔗 Live](https://vaultfs.in) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/VaultFS-Enterprise-File-Management-System)
 
 > *Self-hosting file storage is either expensive (S3) or insecure (shared drives). VaultFS solves both.*
 
 Built a production-grade, self-hosted file platform with enterprise-level security and role management.
 
-- **Auth:** JWT + OAuth 2.0 + TOTP 2FA + 4-tier RBAC
-- **Storage:** SHA-256 deduplication, file versioning, password-protected share links, GDPR export
-- **Live:** 5 active users · 200MB+ storage managed
+- **Auth:** JWT + OAuth 2.0 (Google & GitHub) + TOTP 2FA + 4-tier RBAC
+- **Storage:** SHA-256 deduplication · file versioning with one-click restore · password-protected share links (expiry, download limits, view-only) · 8+ file type previews
+- **Compliance:** HMAC-SHA256 signed webhooks · filterable audit log · GDPR data export · rate limiting
+- **Live:** 5 active users · 50+ files · 200MB+ storage managed on Railway
 
 `React 18` `Node.js` `Express` `MongoDB` `Socket.IO` `JWT` `Passport.js` `Sharp` `Railway`
 
-[🔗 Live Demo](https://vaultfs-enterprise-file-management-system-production.up.railway.app) · [📂 GitHub](https://github.com/kanhaiyaray/VaultFS-Enterprise-File-Management-System)
-
 ---
 
-### 💬 [NexChat — Invite-Only Real-Time Chat](https://nexchat-red.vercel.app/)
+### 💬 NexChat — Invite-Only Real-Time Chat &nbsp;·&nbsp; [🔗 Live](https://nexchat-red.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/NexChat)
+
 > *Most chat apps are open by default. NexChat is zero-trust — you need a token to enter a room.*
 
 Built a privacy-first chat platform with UUID token-based room access and rich multimedia support.
 
-- **Security:** Zero-trust room model — no invite token, no entry
-- **Features:** Voice notes, images, Intersection Observer read receipts, MongoDB full-text search
-- **Live:** 5 active rooms in production
+- **Security:** Zero-trust room model — no invite token, no entry; no public directories, no discovery
+- **Features:** Voice notes, images, emoji reactions, edit/delete, typing indicators · Intersection Observer read receipts (zero scroll listeners, zero layout thrash) · MongoDB full-text search with ±15-message context jump
+- **Live:** 5 active rooms · 5 concurrent users · 1000+ messages in production
 
 `React 19` `Vite` `Socket.IO 4.8` `Express` `MongoDB Atlas` `Cloudinary` `Clerk` `Vercel`
 
-[🔗 Live Demo](https://nexchat-red.vercel.app/) · [📂 GitHub](https://github.com/kanhaiyaray/NexChat)
-
 ---
 
-### 📹 [P2P Video Conferencing](https://react-js-video-call-app.vercel.app/)
-> *WebRTC setup fails silently in most tutorials. I spent 3 days on signalling failures so you don't have to.*
+### 📹 P2P Video Conferencing &nbsp;·&nbsp; [🔗 Live](https://react-js-video-call-app.vercel.app/) &nbsp;·&nbsp; [📂 GitHub](https://github.com/kanhaiyaray/video-conference-app)
+
+> *Most video call tutorials skip the hard parts — device switching, reconnection, and cross-browser quirks. This one doesn't.*
 
 Production-ready video conferencing with sub-200ms connection setup — no plugins required.
 
-- **Performance:** Sub-200ms P2P connection setup · DTLS-SRTP encryption
-- **Features:** Screen sharing, dynamic device switching, serverless signalling via ZEGOCLOUD
+- **Performance:** Sub-200ms P2P connection · DTLS-SRTP encryption · serverless signalling via ZEGOCLOUD
+- **Features:** Screen sharing · dynamic device switching (camera & mic) · reconnect after network interruption · unlimited call duration
+- **Compatibility:** Chrome, Edge, and Firefox · fully responsive Tailwind UI
 
-`React 18` `WebRTC` `ZEGOCLOUD SDK` `Tailwind CSS` `MediaDevices API` `Vercel`
-
-[🔗 Live Demo](https://react-js-video-call-app.vercel.app/) · [📂 GitHub](https://github.com/kanhaiyaray/video-conference-app)
+`React 18` `ZEGOCLOUD SDK` `Tailwind CSS` `MediaDevices API` `Vercel`
 
 ---
 
@@ -135,16 +149,15 @@ Production-ready video conferencing with sub-200ms connection setup — no plugi
   <img width="48%" src="https://streak-stats.demolab.com?user=kanhaiyaray&theme=tokyonight&hide_border=true&date_format=j%20M%5B%20Y%5D" />
   <img width="32%" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=kanhaiyaray&theme=tokyonight&utcOffset=5.5" />
 </p>
-
 </div>
 
 ---
 
 ## 🤝 Let's Connect
 
-I'm open to full-time roles, freelance projects, and startup collaborations. If you're building something real — reach out.
+B.Tech IT graduate (June 2026) — available for immediate joining. Open to full-time, freelance, and startup collaborations. If you're building something real — reach out.
 
-
+- 🌐 **Portfolio** → [kanhaiya-kumar-developer-portfolio.vercel.app](https://kanhaiya-kumar-developer-portfolio.vercel.app/)
 - 🐙 **GitHub** → [github.com/kanhaiyaray](https://github.com/kanhaiyaray)
 - 💼 **LinkedIn** → [linkedin.com/in/raykanhaiya](https://linkedin.com/in/raykanhaiya)
 - 🐦 **X / Twitter** → [x.com/kanhaiyaraymps](https://x.com/kanhaiyaraymps)
