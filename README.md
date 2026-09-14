@@ -5,7 +5,7 @@
   React · Node.js · Express · MongoDB Atlas Vector Search · TypeScript &nbsp;|&nbsp; 4 live apps · real users · real traffic</p>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-raykanhaiya-blue?style=flat&logo=linkedin)](https://linkedin.com/in/raykanhaiya)
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat&logo=vercel)](https://kanhaiya.dev.vaultfs.in)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=flat&logo=vercel)](https://portfolio.vaultfs.in)
 [![Email](https://img.shields.io/badge/Email-samkanhaiya@gmail.com-red?style=flat&logo=gmail)](mailto:samkanhaiya@gmail.com)
 
 </div>
@@ -118,7 +118,7 @@ Full-Stack MERN Developer who independently built and deployed 4 production-grad
 
 ## 🏆 Featured Projects
 
-### 🧠 Developer Portfolio CMS — Headless CMS + AI Chatbot + Real-Time Chat &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://kanhaiya.dev.vaultfs.in) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/Kanhaiya-Kumar-Developer-Portfolio-CMS) 
+### 🧠 Developer Portfolio CMS — Headless CMS + AI Chatbot + Real-Time Chat &nbsp;·&nbsp; [![Live](https://img.shields.io/badge/●%20LIVE-00d4aa?style=flat-square&logoColor=white)](https://portfolio.vaultfs.in) &nbsp;·&nbsp; [![GitHub](https://img.shields.io/badge/⌥%20GITHUB-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/kanhaiyaray/Kanhaiya-Kumar-Developer-Portfolio-CMS) 
 
 > *A portfolio that talks back, streams video, and tracks recruiter behaviour — all built and shipped solo.*
 
@@ -200,7 +200,7 @@ Invite-only real-time chat platform with private rooms, multi-user sessions, and
 
 B.Tech IT graduate — available for immediate joining. Open to full-time, freelance, and startup collaborations. If you're building something real — reach out.
 
-- 🌐 **Portfolio** → [kanhaiya.dev.vaultfs.in](https://kanhaiya.dev.vaultfs.in)
+- 🌐 **Portfolio** → [kanhaiya.dev.vaultfs.in](https://portfolio.vaultfs.in)
 - 🐙 **GitHub** → [github.com/kanhaiyaray](https://github.com/kanhaiyaray)
 - 💼 **LinkedIn** → [linkedin.com/in/raykanhaiya](https://linkedin.com/in/raykanhaiya)
 - 🐦 **X / Twitter** → [x.com/kanhaiyaraymps](https://x.com/kanhaiyaraymps)
